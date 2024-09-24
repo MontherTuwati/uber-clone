@@ -1,14 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const ActivityScreen = () => {
+const AccountScreen = () => {
   return (
     <View>
-      <Text>ActivityScreen</Text>
+      <Text>AccountScreen</Text>
     </View>
   )
 }
 
-export default ActivityScreen
+export default AccountScreen
 
 const styles = StyleSheet.create({})
