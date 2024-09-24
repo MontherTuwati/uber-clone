@@ -5,13 +5,13 @@ const data = [
     {
         id: '123',
         title: 'Rides',
-        image: require('../assets/UberX.png'),
+        image: require('../assets/icons/UberX.png'),
         screen: 'MapScreen',
     },
     {
         id: '456',
         title: 'Eats',
-        image: require('../assets/FoodBowl.png'),
+        image: require('../assets/icons/FoodBowl.png'),
         screen: 'EatsScreen',
     },
 ]
