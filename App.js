@@ -11,6 +11,8 @@ import AccountScreen from './screens/AccountScreen';
 import ActivityScreen from './screens/ActivityScreen';
 import EatsScreen from "./screens/EatsScreen";
 import HomeScreen from "./screens/HomeScreen";
+import RentalScreen from './screens/RentalScreen';
+import RidesScreen from './screens/RidesScreen';
 import ServicesScreen from './screens/ServicesScreen';
 import { store } from './store';
 
@@ -103,9 +105,9 @@ const BottomTabs = () => {
       })}
     >
       <BottomTab.Screen name="Home" component={HomeTabs} options={{ headerShown: false }}/>
-      <BottomTab.Screen name="Services" component={ServicesScreen} />
-      <BottomTab.Screen name="Activity" component={ActivityScreen} />
-      <BottomTab.Screen name="Account" component={AccountScreen} />
+      <BottomTab.Screen name="Services" component={ServicesScreen} options={{ headerShown: false }} />
+      <BottomTab.Screen name="Activity" component={ActivityScreen} options={{ headerShown: false }} />
+      <BottomTab.Screen name="Account" component={AccountScreen} options={{ headerShown: false }} />
     </BottomTab.Navigator>
   );
 };
@@ -123,6 +125,8 @@ export default function App() {
       <Provider store={store}>
         <Stack.Navigator>
           <Stack.Screen name="Root" component={BottomTabs} options={{ headerShown: false }} />
+          <Stack.Screen name="RentalScreen" component={RentalScreen} options={{ headerShown: false }} />
+          <Stack.Screen name="RidesScreen" component={RidesScreen} options={{ headerShown: false }} />
         </Stack.Navigator>
       </Provider>
     </NavigationContainer>

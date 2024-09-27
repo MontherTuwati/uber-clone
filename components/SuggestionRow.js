@@ -5,7 +5,7 @@ import SuggestionCard from './SuggestionCard'
 const SuggestionRow = () => {
     return (
         <View
-        className='flex-1 mx-auto justify-center'>
+        className='mx-auto justify-center'>
             {/* Header */}
             <View className='flex-row items-center px-4 pt-5 justify-between'>
                 <Text className='text-xl font-extrabold'>Suggestions</Text>
